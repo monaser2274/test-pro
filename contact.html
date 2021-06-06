@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/css.css" >
+    <link rel="stylesheet" href="css/all.min.css" >
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+            <h1>FASHION</h1>
+        </div>
+        <ul class="list-iteam">
+            <li>
+                <a href="index.html" class="link">Home</a>
+            </li>
+            <li>
+              <a href="image-gallary.html" class="link">Gellary Image</a>
+          </li>
+          <li>
+              <a href="discounts.html" class="link">Discounts</a>
+          </li>
+          <li>
+              <a href="about-us.html" class="link">About Us</a>
+          </li>
+          <li>
+              <a href="contact.html" class="link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="icons">
+          <a href="#" class="i" target="_blank" ><i class="fas fa-search"></i></a>
+          <a href="#" class="i" target="_blank" ><i class="fas fa-cart-plus"></i> </a>
+      </div>
+    </nav>
+        
+
+        <div class="container">
+          
+          <form id="myform" action="index.html" method="post" onsubmit="return validation()" autocomplete="on" >
+
+    
+            <div class="inputBox">
+                <input name="fname" type="text" placeholder="First name" id="user" class="control" required>
+                <input name="lname" type="text" placeholder="last name" id="user2" class="control" required>
+                <input name="email" type="email" id="email" class="control" placeholder="email" required>
+                <input  name="number" type="tel" id="mobile" class="control" placeholder="mobile phone number" pattern="[0-9]{11}"  required>
+                <input  name="password"type="password" id ="pass" class="control" placeholder="password" required>
+                <input name="passward" type="password" placeholder="confirm passward" id="conpass" class="control" >
+            </div>
+
+        
+                
+           
+           
+
+            <textarea placeholder="Your order.." name="address" id="" cols="30" rows="10" required></textarea>
+            
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+            
+
+            <input type="submit" value="order now" class="btn" id="submit" >
+
+        </form>
+          </div>
+    </header>  
+    <script src="js/js.js"></script> 
+</body>
+</html>

@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    padding-left: 50px;
+    color: white;
+}
+.list-iteam{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    
+}
+.link:hover{
+    color: red;
+    transition: 0.4s;
+}
+.icons{
+    width: 30%;
+    font-size: 20px;
+    
+}
+.i{
+    color: white;
+    float: right;
+    padding-right: 20px;
+}
+.i:hover{
+    color: red;
+    transition: 0.4s;
+}
+.main{
+    display: flex;
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.main-left{
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    /* background-color: red; */
+}
+.main-left-social{
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shap-social{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.shap-social:hover{
+    color: red;
+    transition: 0.4s;
+}
+.main-left-social::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background: white;
+    top: 20px;
+}
+.main-left-social::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background: white;
+    bottom: 20px;
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h1{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    color: white;
+}
+.text span{
+    color: red;
+}
+.main-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background: black;
+}
+.main-right img{
+    height: 100%;
+    width: 100%;
+   object-fit: contain;
+   /* padding-right: 20px; */
+   opacity: 0;
+   animation: animation 5s forwards;
+   animation-delay: 1s;
+}
+@keyframes animation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.gellary{
+    margin: 20px 50px;
+}
+.gellary img{
+    width: 250px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gellary img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+/* contact */
+input[type=tel],input[type=email],input[type=password],input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 6px;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    
+  }
+  
+  input[type=submit] {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f296;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  /* discounts */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd
+  }
+  th{
+      height: 100px;
+  }
+  
+  tr:hover {background-color:#f5f5f5;}
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+
+    .logo,.icons        {display: none;}
+    .list-iteam{width: 100%;}
+    
+
+    
+
+    
+  }
+  @media(max-width:768px){
+    .list-iteam{width: 100%;}
+    .logo,.icons   {display: none;}
+    .gellary img{width: 100%;}
+    
+  }
+  
+  @media(max-width:911px){
+    .list-iteam{width: 100%;}
+    
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 450px) {
+    .main {        
+     display: flex;
+      flex-direction: column ;
+      flex-wrap: wrap;
+      
+    }
+    /* .main-left{} */
+    .main-left-social{display: none;}
+    /* .banner{100%} */
+    .banner text{width:20px}
+    /* .main-right{100%} */
+
+    .list-iteam{width: 100%;};
+    /* nav{width: 100%; height: auto;}
+    .list-iteam{width: 100%; flex-direction: column ; justify-content: space-around; } */
+
+    
+  }
+
+    @media(max-width:700px){
+  
+        html{
+          font-size: 50%;
+        }
+    }
+
+
+
+
+
+
+
+
+
