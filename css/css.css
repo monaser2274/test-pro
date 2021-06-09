@@ -205,20 +205,7 @@ input[type=tel],input[type=email],input[type=password],input[type=text], select,
     padding: 20px;
     height: 100%;
     width: 100%;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
+}
   /* Clear floats after the columns */
   .row:after {
     content: "";
