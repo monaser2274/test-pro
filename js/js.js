@@ -79,9 +79,10 @@ function validation(e){
        return false;
    }
    //not to accept without upper characters
-   if(pass.search(/[A-Z]/)==-1){
- alert("*must include at least 1 upper character*");
-       return false;
+   var first=pass.substr(0,1);
+   if(!(first.match(/[A-Z]/))){
+     alert("*first letter should be upper case*");
+     return false;
    }
    // not to accept without lower characters
   if(pass.search(/[a-z]/)==-1){
